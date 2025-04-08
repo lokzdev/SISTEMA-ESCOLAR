@@ -327,18 +327,17 @@
         once: true,
         offset: 100,
       });
-      function revelarSurpresa() {
+      async function revelarSurpresa() {
         const senhaCorreta = "2801";
         const senhaDigitada = prompt("Digite a senha:");
+
         if (senhaDigitada === senhaCorreta) {
-          var novaPagina = window.open("", "_blank");
-          novaPagina.document.write(
-            "<h1 style='text-align: center;'>ola gays.</h1>"
-          );
+          window.location.href = "index2.html";
         } else {
           alert("Senha incorreta. Tente novamente!");
         }
       }
+
       window.onload = revelarSurpresa;
     </script>
   </body>
