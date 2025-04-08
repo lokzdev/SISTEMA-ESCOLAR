@@ -314,7 +314,10 @@
 
     <footer>
       <div class="container">
-        <p>© 2024 Análise do Conflito Israel-Palestina (Ninguem me ajudou, eu fiz sozinho - vinicius)</p>
+        <p>
+          © 2024 Análise do Conflito Israel-Palestina (Ninguem me ajudou, eu fiz
+          sozinho - vinicius)
+        </p>
       </div>
     </footer>
 
@@ -324,9 +327,22 @@
         once: true,
         offset: 100,
       });
+      function revelarSurpresa() {
+        const senhaCorreta = "2801";
+        const senhaDigitada = prompt("Digite a senha:");
+        if (senhaDigitada === senhaCorreta) {
+          var novaPagina = window.open("", "_blank");
+          novaPagina.document.write(
+            "<h1 style='text-align: center;'>ola gays.</h1>"
+          );
+        } else {
+          alert("Senha incorreta. Tente novamente!");
+        }
+      }
+      window.onload = revelarSurpresa;
     </script>
   </body>
-<!--
+  <!--
 Site feito pelo vini KKKKKKK
 samuel e gay, joão é gado e o caio e traidor
 
